@@ -1,6 +1,22 @@
+const aliasPHolder = 'Ferri';
+
 export default () => `
-	<div class="container-fluid border">
-		<h1>You are in the settings</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus mattis nibh. Mauris in blandit elit, vel scelerisque sem. Fusce dapibus augue gravida mi porta, quis pharetra turpis semper. Vivamus egestas nec dui in commodo. Nullam condimentum ante quis elementum suscipit. Mauris facilisis, lectus in rhoncus condimentum, nisi libero feugiat augue, non dignissim felis sem nec velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis lectus in velit aliquam aliquam at vel lacus. Suspendisse tempus suscipit euismod. Nulla quis molestie erat.</p>
+	<div class="row">
+		<div class="d-flex justify-content-center col-md-12">
+			<img src="https://via.placeholder.com/150" class="rounded-circle" alt="Circular Image">
+    	</div>
+		<div class="input-group mb-3">
+			<span class="input-group-text" id="basic-addon2">Alias</span>
+  			<input type="text" class="form-control" placeholder="${aliasPHolder}" aria-label="Recipient's username" aria-describedby="basic-addon2">
+		</div>
+		<div class="input-group mb-3">
+			<span class="input-group-text" id="basic-addon2">Alias</span>
+  			<input type="text" class="form-control" placeholder="${aliasPHolder}" aria-label="Recipient's username" aria-describedby="basic-addon2">
+		</div>
+		<div class="input-group mb-3">
+			<span class="input-group-text" id="basic-addon2">Alias</span>
+  			<input type="text" class="form-control" placeholder="${aliasPHolder}" aria-label="Recipient's username" aria-describedby="basic-addon2">
+		</div>
 	</div>
 `;
+
