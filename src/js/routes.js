@@ -51,9 +51,11 @@ function	router(oldCssRoute=undefined) {
 	let view = routes[windowPathname];
 	
 	loadCSS(view.css);
-	if (oldCssRoute) {
-		unloadCSS(oldCssRoute);
-	}
+	setTimeout(() => {
+		if (oldCssRoute) {
+			unloadCSS(oldCssRoute);
+		}
+	},5000);
 	updateActiveElementNavbar();
 	if (view) {
 		document.title = view.title;
