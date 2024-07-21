@@ -5,47 +5,54 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/styles/custom-bootstrap.css"/>
+    <link rel="stylesheet" href="src/styles/style.css"/>
     <title>_ft_transcendence_</title>
   </head>
-  <style>
-    #icon42 {
-      fill: white;
-      transition: 0.3s fill ease;
-      margin-right: 0px;
-    }
-
-    .btn-outline-light:hover #icon42 {
-      fill: black;
-    }
-    .btn-outline-light {
-      padding: 12px 32px !important;
-      border-radius: 12px !important;
-    }
-    #paddle-animation {
-      height: 140px;
-    }
-    button {
-      font-size: 20px !important;
-      min-width: 100%;
-    }
-  </style>
   <body>
-    <div class="bg-dark container-fluid vh-100 d-flex justify-content-center align-items-center">
-      <div class="d-flex flex-column gap-4">
-        <div id="paddle-animation"></div>
-        <div class="log-buttons d-flex flex-column align-items-center gap-3">
-            <button type="button" class="btn btn-outline-light d-flex align-items-center justify-content-center gap-3">
-              <svg id="icon42" height="34" viewBox="0 0 30 35" xmlns="http://www.w3.org/2000/svg"><path d="M1 22.1962H11.3156V28.0542H16.4625V17.4681H6.16563L16.4625 5.77354H11.3156L1 17.4681V22.1962Z"/><path d="M18.6843 11.6279L23.8343 5.77354H18.6843V11.6279Z"/><path d="M23.8343 11.6279L18.6843 17.4681V23.3048H23.8343V17.4681L29 11.6279V5.77354H23.8343V11.6279Z"/><path d="M29 17.4681L23.8344 23.3048H29V17.4681Z"/></svg>
-              <span>Sign in with 42</span>
-            </button>
-            <button type="button" class="btn btn-outline-light d-flex align-items-center justify-content-center">
-              <span>Log in</span>
-            </button>
-            <a href="#">or sign up</a>
+    <nav class="container-md navbar navbar-expand-lg border-bottom bg-blacky text-cream mb-4">
+
+      <a class="navbar-brand" href="/" data-link><img src="src/assets/paddle.svg" alt="" width="30"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/" data-link>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about" data-link>About</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/settings" data-link>Profile</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="/sign in" data-link>Sign in</a>
+          </li> -->
+        </ul>
+				
+			</div>
+		</nav>
+    <div class="container-md">
+      <main class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+        <div class="d-flex flex-column gap-4">
+          <div id="paddle-animation"></div>
+          <div class="log-buttons d-flex flex-column align-items-center gap-3">
+              <button type="button" class="btn-outline-blacky2 btn btn-outline-blacky btn-login d-flex align-items-center justify-content-center gap-3">
+                <svg height="34" viewBox="0 0 30 35" xmlns="http://www.w3.org/2000/svg"><path d="M1 22.1962H11.3156V28.0542H16.4625V17.4681H6.16563L16.4625 5.77354H11.3156L1 17.4681V22.1962Z"/><path d="M18.6843 11.6279L23.8343 5.77354H18.6843V11.6279Z"/><path d="M23.8343 11.6279L18.6843 17.4681V23.3048H23.8343V17.4681L29 11.6279V5.77354H23.8343V11.6279Z"/><path d="M29 17.4681L23.8344 23.3048H29V17.4681Z"/></svg>
+                <span>Sign in with 42</span>
+              </button>
+              <button type="button" class="btn btn-outline-blacky btn-login d-flex align-items-center justify-content-center">
+                <span>Log in</span>
+              </button>
+              <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#">or sign up</a>
+          </div>
         </div>
-      </div>
+      </main>
     </div>
-    <!--<script type="module" src="src/js/main.js"></script>-->
     <script type="module" src="src/js/main2.js"></script>
   </body>
 </html>

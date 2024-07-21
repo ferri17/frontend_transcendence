@@ -1,0 +1,106 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Customs variables
+$cream: #F9F9EF;
+$blacky: #171716;
+
+// Import Roboto font
+@font-face {
+	font-family: 'Roboto';
+	src: url('/src/assets/fonts/Roboto-Regular.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+:root {
+	--bs-cream: #{$cream};
+	--bs-cream-emphasis: #{mix(#000, $cream, 5)};
+	--bs-blacky: #{$blacky};
+}
+
+/* [data-bs-theme="dark"] {
+	.btn-outline-cream {
+		@import btn-outline-dark
+	}
+	svg {
+		fill: #{$cream};
+	}
+
+	.btn-login:hover svg {
+		fill: #{$blacky};
+	}
+} */
+
+svg {
+	fill: #{$blacky};
+	transition: 0.15s fill ease;
+}
+
+.btn-login:hover svg {
+	fill: #{$cream};
+}
+
+$custom-colors: (
+	"blacky": $blacky,
+	"cream": $cream
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$btn-border-radius: 0.75rem;
+
+$body-bg: $cream;
+$body-bg-dark: $blacky;
+
+
+/* // Override $theme-colors map with your custom colors
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+); */
+
+/* // Dark-mode fixes
+[data-bs-theme="dark"] {
+	.btn-outline-primary {
+		color: $secondary;
+		border-color: $secondary;
+	}
+}
+
+$feature-bg: #ffd803;
+
+.btn-feature {
+  @include button-variant($feature-bg, darken($feature-bg, 3%));
+
+  // optitional
+  // color: #fff; #uncomment and add your color
+}
+  
+// Customize button
+$btn-padding-y: 1rem; // Custom button padding
+$btn-padding-x: 2rem;
+$btn-border-radius: 0.75rem;
+$btn-outline-hover: red;
+
+
+
+// Override light theme variables
+$body-bg: $white-cream;
+$body-bg-dark: $black-wash;
+
+$body-color: $black-wash;
+$body-color-dark: $white-cream;
+
+
+
+ */
+// Import Bootstrap's core
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
