@@ -14,9 +14,9 @@ body {
 
 nav{
 	height: 3.75rem;
-	border-radius: 0 0 0.75rem 0.75rem;
+	/* border-radius: 0 0 0.75rem 0.75rem; */
 }
-
+/* 
 nav ul li a {
-	color: var(--bs-cream) !important;
-}
+	color: var(--bs-blacky) !important;
+} */

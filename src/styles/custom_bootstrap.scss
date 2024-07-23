@@ -34,12 +34,12 @@ $blacky: #171716;
 } */
 
 svg {
-	fill: #{$blacky};
+	fill: #{$cream};
 	transition: 0.15s fill ease;
 }
 
 .btn-login:hover svg {
-	fill: #{$cream};
+	fill: #{$blacky};
 }
 
 $custom-colors: (
@@ -51,8 +51,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 $btn-border-radius: 0.75rem;
 
-$body-bg: $cream;
-$body-bg-dark: $blacky;
+$body-bg: $blacky;
+$body-bg-dark: $cream;
 
 
 /* // Override $theme-colors map with your custom colors

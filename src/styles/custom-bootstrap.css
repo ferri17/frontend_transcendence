@@ -24,12 +24,12 @@
 	}
 } */
 svg {
-  fill: #171716;
+  fill: #F9F9EF;
   transition: 0.15s fill ease;
 }
 
 .btn-login:hover svg {
-  fill: #F9F9EF;
+  fill: #171716;
 }
 
 /* // Override $theme-colors map with your custom colors
@@ -163,8 +163,8 @@ $body-color-dark: $white-cream;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg: #F9F9EF;
-  --bs-body-bg-rgb: 249, 249, 239;
+  --bs-body-bg: #171716;
+  --bs-body-bg-rgb: 23, 23, 22;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
   --bs-secondary-color: rgba(33, 37, 41, 0.75);
@@ -212,8 +212,8 @@ $body-color-dark: $white-cream;
   color-scheme: dark;
   --bs-body-color: #dee2e6;
   --bs-body-color-rgb: 222, 226, 230;
-  --bs-body-bg: #171716;
-  --bs-body-bg-rgb: 23, 23, 22;
+  --bs-body-bg: #F9F9EF;
+  --bs-body-bg-rgb: 249, 249, 239;
   --bs-emphasis-color: #fff;
   --bs-emphasis-color-rgb: 255, 255, 255;
   --bs-secondary-color: rgba(222, 226, 230, 0.75);
