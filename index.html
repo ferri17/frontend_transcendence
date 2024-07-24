@@ -49,11 +49,36 @@
           <img src="/src/assets/paddle.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
           Transcendence
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <p >dsds</p>
-        <p>hola</p>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <div class="navbar-nav ms-auto  gap-2">
+            <li class="nav-item align-self-center">
+              <a class="nav-link active" aria-current="page" href="#">Play</a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class="nav-link" href="#">About</a>
+            </li>
+			<li class="nav-item dropdown align-self-center p-2" data-bs-theme="dark">
+				<a class="profile-link nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				</a>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="#">Profile</a></li>
+				  <li><a class="dropdown-item" href="#">Log out</a></li>
+				</ul>
+			</li>
+			<li class="nav-item dropdown align-self-center" data-bs-theme="dark">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  EN
+				</a>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="#">ES</a></li>
+				  <li><a class="dropdown-item" href="#">FR</a></li>
+				</ul>
+			  </li>
+          </div>
+        </div>
       </div>
     </nav>
 

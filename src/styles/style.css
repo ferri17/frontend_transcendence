@@ -16,6 +16,21 @@ nav{
 	height: 3.75rem;
 	/* border-radius: 0 0 0.75rem 0.75rem; */
 }
+
+.navbar-toggler {
+	border: none;
+}
+
+.profile-link {
+	width: 2.4rem;
+	height: 2.4rem;
+	border: 1px solid var(--bs-blacky);
+	border-radius: 100%;
+	background-image: url('/src/assets/profile_chicken.jpg');
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
 /* 
 nav ul li a {
 	color: var(--bs-blacky) !important;
