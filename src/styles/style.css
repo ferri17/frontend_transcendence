@@ -1,21 +1,38 @@
+/* Can customize bootstrap through css variables */
+
+:root {
+	--bs-body-bg: var(--bs-blacky);
+	
+
+	--bs-dropdown-link-color: white;
+	.dropdown-menu {
+		--bs-dropdown-border-color: var(--bs-cream-emphasis);
+		--bs-body-color: var(--bs-cream);
+		--bs-dropdown-link-hover-color: var(--bs-blacky);
+		--bs-dropdown-link-active-color: var(--bs-blacky);
+		--bs-dropdown-link-hover-bg: var(--bs-cream-emphasis);
+		--bs-dropdown-link-active-bg: var(--bs-cream-emphasis);
+	}
+}
 
 body {
 	font-family: 'Roboto', Arial, sans-serif;
+	
 }
+
 
 #paddle-animation {
 	height: 200px;
-  }
+}
 
 .btn-login {
 	min-width: 100%;
 	height: 3.2rem;
 }
 
-nav{
+/* nav{
 	height: 3.75rem;
-	/* border-radius: 0 0 0.75rem 0.75rem; */
-}
+} */
 
 .navbar-toggler {
 	border: none;

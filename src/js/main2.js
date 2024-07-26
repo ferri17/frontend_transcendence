@@ -10,5 +10,5 @@ Lottie.loadAnimation({
 	renderer: 'svg',
 	loop: true,
 	autoplay: true,
-	path: '/src/assets/paddle_lottie.json' // the path to the animation json
+	path: '/src/assets/paddle_lottie.json'
 });

@@ -16,31 +16,19 @@ $blacky: #171716;
 
 :root {
 	--bs-cream: #{$cream};
-	--bs-cream-emphasis: #{mix(#000, $cream, 5)};
 	--bs-blacky: #{$blacky};
+	--bs-cream-emphasis: #{mix(#000, $cream, 5)};
+
 }
 
-/* [data-bs-theme="dark"] {
-	.btn-outline-cream {
-		@import btn-outline-dark
-	}
-	svg {
-		fill: #{$cream};
-	}
-
-	.btn-login:hover svg {
-		fill: #{$blacky};
-	}
-} */
-
-svg {
+/* svg {
 	fill: #{$cream};
 	transition: 0.15s fill ease;
 }
 
 .btn-login:hover svg {
 	fill: #{$blacky};
-}
+} */
 
 $custom-colors: (
 	"blacky": $blacky,
@@ -49,58 +37,7 @@ $custom-colors: (
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-$btn-border-radius: 0.75rem;
+/* $btn-border-radius: 0.75rem; */
 
-$body-bg: $blacky;
-$body-bg-dark: $cream;
-
-
-/* // Override $theme-colors map with your custom colors
-$theme-colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "success": $success,
-  "info": $info,
-  "warning": $warning,
-  "danger": $danger,
-  "light": $light,
-  "dark": $dark
-); */
-
-/* // Dark-mode fixes
-[data-bs-theme="dark"] {
-	.btn-outline-primary {
-		color: $secondary;
-		border-color: $secondary;
-	}
-}
-
-$feature-bg: #ffd803;
-
-.btn-feature {
-  @include button-variant($feature-bg, darken($feature-bg, 3%));
-
-  // optitional
-  // color: #fff; #uncomment and add your color
-}
-  
-// Customize button
-$btn-padding-y: 1rem; // Custom button padding
-$btn-padding-x: 2rem;
-$btn-border-radius: 0.75rem;
-$btn-outline-hover: red;
-
-
-
-// Override light theme variables
-$body-bg: $white-cream;
-$body-bg-dark: $black-wash;
-
-$body-color: $black-wash;
-$body-color-dark: $white-cream;
-
-
-
- */
 // Import Bootstrap's core
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
