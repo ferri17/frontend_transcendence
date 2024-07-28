@@ -6,11 +6,11 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/svg+xml" href="/vite.sv" />
     <link rel="stylesheet" href="src/styles/custom-bootstrap.css"/>
-    <link rel="stylesheet" href="src/styles/style.css"/>
+    <link rel="stylesheet" href="src/styles/styles.css"/>
     <title>ft_transcendence</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-cream">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-lg">
         <a class="navbar-brand" href="#">
           <img src="/src/assets/paddle.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
@@ -43,6 +43,11 @@
 				  <li><a class="dropdown-item" href="#">ES</a></li>
 				  <li><a class="dropdown-item" href="#">FR</a></li>
 				</ul>
+			  </li>
+			  <li>
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" role="switch" id="light-mode-switch">
+				</div>
 			  </li>
           </div>
         </div>
@@ -87,7 +92,7 @@
           <div id="paddle-animation"></div>
           <div class="log-buttons d-flex flex-column align-items-center gap-3">
               <button type="button" class="btn btn-outline-cream btn-login d-flex align-items-center justify-content-center gap-3">
-                <svg height="34" viewBox="0 0 30 35" xmlns="http://www.w3.org/2000/svg"><path d="M1 22.1962H11.3156V28.0542H16.4625V17.4681H6.16563L16.4625 5.77354H11.3156L1 17.4681V22.1962Z"/><path d="M18.6843 11.6279L23.8343 5.77354H18.6843V11.6279Z"/><path d="M23.8343 11.6279L18.6843 17.4681V23.3048H23.8343V17.4681L29 11.6279V5.77354H23.8343V11.6279Z"/><path d="M29 17.4681L23.8344 23.3048H29V17.4681Z"/></svg>
+                <svg class="cs-svg" height="34" viewBox="0 0 30 35" xmlns="http://www.w3.org/2000/svg"><path d="M1 22.1962H11.3156V28.0542H16.4625V17.4681H6.16563L16.4625 5.77354H11.3156L1 17.4681V22.1962Z"/><path d="M18.6843 11.6279L23.8343 5.77354H18.6843V11.6279Z"/><path d="M23.8343 11.6279L18.6843 17.4681V23.3048H23.8343V17.4681L29 11.6279V5.77354H23.8343V11.6279Z"/><path d="M29 17.4681L23.8344 23.3048H29V17.4681Z"/></svg>
                 <span>Sign in with 42</span>
               </button>
               <button type="button" class="btn btn-outline-cream btn-login d-flex align-items-center justify-content-center">
