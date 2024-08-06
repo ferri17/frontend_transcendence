@@ -5,11 +5,11 @@ import '/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 
 'use strict';
 
-const	lightModeSwtich = document.querySelector('#light-mode-switch');
+const	lightModeSwitch = document.querySelectorAll('.light-mode-switch');
 
 document.addEventListener('DOMContentLoaded', () => {
 	
-	updateLightMode();
+	//updateLightMode();
 });
 
 Lottie.loadAnimation({
@@ -22,14 +22,19 @@ Lottie.loadAnimation({
 
 // Light mode switch behaviour
 
+lightModeSwitch.forEach( elementSwitch => {
+	elementSwitch.addEventListener('click', () => {
+		updateLightMode();
+	});
+});
 
-lightModeSwtich.addEventListener('change', (event) => updateLightMode(event));
-
-function	updateLightMode(event) {
-	if (event.target.checked)
-		document.documentElement.setAttribute('data-bs-theme', 'light');
-	else
+function	updateLightMode() {
+	lightModeSwitch.forEach( elementSwitch => {
+		elementSwitch.classList.toggle('d-none');
+	});
+	if (document.documentElement.hasAttribute('data-bs-theme'))
 		document.documentElement.removeAttribute('data-bs-theme');
-
+	else
+		document.documentElement.setAttribute('data-bs-theme', 'light');
 }
 	

@@ -7,8 +7,11 @@
 }
 :root {
   --bs-cream: #F9F9EF;
+  --bs-cream-hover: rgba(249, 249, 239, 0.7);
+  --bs-cream-subtle: #ecece2;
   --bs-blacky: #171716;
-  --bs-cream-emphasis: #edede3;
+  --bs-blacky-hover: #383636;
+  --bs-blacky-subtle: #323230;
 }
 
 /*!

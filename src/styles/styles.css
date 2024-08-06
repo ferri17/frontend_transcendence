@@ -2,19 +2,34 @@
 
 :root {
 	--bs-cs-primary: var(--bs-blacky);
-	--bs-cs-primary-emphasis: var(--bs-blacky-emphasis);
+	--bs-cs-primary-hover: var(--bs-blacky-hover);
+	--bs-cs-primary-subtle: var(--bs-blacky-subtle);
 	--bs-cs-secondary: var(--bs-cream);
-	--bs-cs-secondary-emphasis: var(--bs-cream-emphasis);
+	--bs-cs-secondary-hover: var(--bs-cream-hover);
+	--bs-cs-secondary-subtle: var(--bs-cream-subtle);
 	--bs-body-bg: var(--bs-cs-primary);
 }
 
+[data-bs-theme="light"] {
+	--bs-cs-primary: var(--bs-cream);
+	--bs-cs-primary-hover: var(--bs-cream-hover);
+	--bs-cs-primary-subtle: var(--bs-cream-subtle);
+	--bs-cs-secondary: var(--bs-blacky);
+	--bs-cs-secondary-hover: var(--bs-blacky-hover);
+	--bs-cs-secondary-subtle: var(--bs-blacky-subtle);
+}
+
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+}
+
 .dropdown-menu {
-	--bs-dropdown-border-color: var(--bs-cs-secondary-emphasis);
+	--bs-dropdown-border-color: var(--bs-cs-secondary-hover);
 	--bs-body-color: var(--bs-cs-secondary);
 	--bs-dropdown-link-hover-color: var(--bs-cs-primary);
 	--bs-dropdown-link-active-color: var(--bs-cs-primary);
-	--bs-dropdown-link-hover-bg: var(--bs-cs-secondary-emphasis);
-	--bs-dropdown-link-active-bg: var(--bs-cs-secondary-emphasis);
+	--bs-dropdown-link-hover-bg: var(--bs-cs-primary-subtle);
+	--bs-dropdown-link-active-bg: var(--bs-cs-primary-subtle);
 }
 
 button .cs-svg {
@@ -27,44 +42,78 @@ button:active .cs-svg {
 	fill: var(--bs-cs-primary);
 }
 
-[data-bs-theme="light"] {
-	--bs-cs-primary: var(--bs-cream);
-	--bs-cs-primary-emphasis: var(--bs-cream-emphasis);
-	--bs-cs-secondary: var(--bs-blacky);
-	--bs-cs-secondary-emphasis: var(--bs-blacky-emphasis);
+/*
+	Bootstrap colour overrides for light modes
+*/
+
+.nav-link {
+	color: var(--bs-cs-secondary);
+	transition: 0.25s color ease;
+}
+
+.navbar-brand {
+	color: var(--bs-cs-secondary);
+	transition: 0.25s color ease;
+}
+
+.navbar-brand:hover,
+.navbar-brand:active,
+.navbar-brand:focus {
+	color: var(--bs-cs-secondary-hover);
+}
+
+.btn-outline-cream {
+	color: var(--bs-cs-secondary);
+	border-color: var(--bs-cs-secondary);
+	transition: color  0.25s ease, background-color 0.25s ease;
+}
+
+.btn-outline-cream:hover {
+	color: var(--bs-cs-primary);
+	background-color: var(--bs-cs-secondary);
+}
+
+.link-cream {
+	color: var(--bs-cs-secondary) !important;
+	text-decoration-color: var(--bs-cs-secondary-hover) !important;
+	
+}
+
+.link-cream:hover {
+	color: var(--bs-cs-secondary) !important;
+	text-decoration-color: var(--bs-cs-secondary) !important;
+}
+
+.navbar li a {
+	color: var(--bs-cs-secondary);
+}
+
+.navbar li a:hover,
+.navbar li a:active,
+.navbar li a:focus {
+	color: var(--bs-cs-secondary);
+}
+
+.navbar-toggler {
+	border-color: red;
+}
+
+.navbar-nav .nav-link.show {
+	color: var(--bs-cs-secondary-hover);
 }
 
 /*
 	Bootstrap colour overrides for light modes
 */
-.navbar {
-	background-color: var(--bs-cs-secondary);
 
-}
-.btn-outline-cream {
-	color: var(--bs-cs-secondary);
-	border-color: var(--bs-cs-secondary);
-}
-
-.link-cream {
-	color: var(--bs-cs-secondary);
-	border-color: var(--bs-cs-secondary) !important;
-}
-
-/*
-*/
-
-body {
-	font-family: 'Roboto', Arial, sans-serif;
-}
 
 #paddle-animation {
 	height: 200px;
 }
 
 .btn-login {
-	min-width: 100%;
-	height: 3.2rem;
+	width: 300px;
+	height: 48px;
 }
 
 /* nav{
@@ -76,16 +125,33 @@ body {
 }
 
 .profile-link {
-	width: 2.4rem;
-	height: 2.4rem;
-	border: 1px solid var(--bs-blacky);
+	width: 36px;
+	height: 36px;
+	border: 1px solid var(--bs-cs-secondary);
 	border-radius: 100%;
 	background-image: url('/src/assets/profile_chicken.jpg');
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover; /* Resize the background image to cover the entire container */
 }
-/* 
-nav ul li a {
-	color: var(--bs-blacky) !important;
-} */
+
+svg.light-mode-switch {
+	fill: var(--bs-cs-secondary);
+}
+
+svg.light-mode-switch:hover {
+	fill: var(--bs-cs-secondary-hover);
+	cursor: pointer;
+}
+
+@media (width < 992px) {
+	.navbar {
+		/* background-color: var(--bs-cs-primary-hover); */
+	}
+}
+
+@media (width < 576px) {
+	.btn-login {
+		width: 80vw;
+	}
+}

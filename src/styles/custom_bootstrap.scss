@@ -6,6 +6,7 @@
 $cream: #F9F9EF;
 $blacky: #171716;
 
+
 // Import Roboto font
 @font-face {
 	font-family: 'Roboto';
@@ -16,8 +17,15 @@ $blacky: #171716;
 
 :root {
 	--bs-cream: #{$cream};
+	--bs-cream-hover: #{rgba(red($cream), green($cream), blue($cream), 0.7)};
+	--bs-cream-subtle: #ecece2;
+	
 	--bs-blacky: #{$blacky};
-	--bs-cream-emphasis: #{mix(#000, $cream, 5)};
+	--bs-blacky-hover: #383636;
+	--bs-blacky-subtle: #323230;
+
+
+
 
 }
 
