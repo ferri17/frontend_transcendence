@@ -125,8 +125,8 @@ button:active .cs-svg {
 }
 
 .profile-link {
-	width: 36px;
-	height: 36px;
+	width: 40px;
+	height: 40px;
 	border: 1px solid var(--bs-cs-secondary);
 	border-radius: 100%;
 	background-image: url('/src/assets/profile_chicken.jpg');

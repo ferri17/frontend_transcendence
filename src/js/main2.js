@@ -1,4 +1,5 @@
 import Lottie from 'lottie-web';
+import '/src/js/languages.js';
 //import '/src/styles/style.css';
 import '/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 //import '/src/styles/custom-bootstrap.css';
